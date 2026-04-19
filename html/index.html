@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"> 
+     <img src="#" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      Logo
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/html/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/html/login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/html/community.html">Community</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Shop
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/html/women.html">Women</a></li>
+            <li><a class="dropdown-item" href="/html/men.html">Men</a></li>
+            <li><a class="dropdown-item" href="/html/children.html">Children</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/html/cart.html">Cart</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- product intro -->
+<div class="container-lg">
+  <div class="row">
+    <div class="col">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam velit eligendi enim. Quia quae doloremque vel dignissimos aperiam sequi qui tenetur voluptate adipisci aliquam eum fugiat labore, excepturi aspernatur, enim, nobis harum.</p>
+    </div>
+  </div>
+
+<!-- slide show -->
+  <div class="row">
+    <div class="col">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div> 
+  
+<!-- card and words -->
+<div class="container-lg">
+    <div class="row">
+        <div class="col-6">
+            <div class="container my-4">
+                <div class="card text-center shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Users</h5>
+                        <h1 class="display-4 fw-bold text-primary" id="userCount">0</h1>
+                        <p class="card-text text-muted">Users in our community</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo dolor ipsam nesciunt velit eius omnis esse iste ea, labore rerum veritatis et? Totam rerum, sint perferendis possimus nam animi repellendus illum nobis.</p>
+        </div>
+    </div>
+</div>
+
+<!-- button for order -->
+<a href="#login" class="btn btn-lg btn-outline-primary text-center">
+JOIN US
+</a>
+
+ <script src="/js/js/bootstrap.bundle.min.js "></script>
+ <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> -->
+</body>
+<footer class="footer-fluid">
+    <div class="footer-bottom">
+        <p>@ 2026| Company's Name <br>
+            All rights are reserved
+        </p>
+    </div>
+</footer>
+</html>
