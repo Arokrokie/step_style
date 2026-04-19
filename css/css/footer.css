@@ -1,0 +1,14 @@
+.footer-fluid {
+  background-color: #212529;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  margin-top: 20px;
+}
