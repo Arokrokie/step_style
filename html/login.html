@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="/css/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/css/footer.css" />
+    <link rel="stylesheet" href="/css/css/footer.css">
 </head>
 
 <body>
@@ -34,19 +34,12 @@
           <a class="nav-link" href="/html/community.html">Community</a>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-            Shop
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/html/women.html">Women</a></li>
-            <li><a class="dropdown-item" href="/html/men.html">Men</a></li>
-            <li><a class="dropdown-item" href="/html/children.html">Children</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="/html/shop.html">Shop</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/html/cart.html">Cart</a>
+          <a class="nav-link" href="/html/cart.html">Cart<span class="badge bg-dark ms-1" id="cartCount">0</span></a>
         </li>
       </ul>
     </div>
@@ -55,8 +48,7 @@
 
 <!-- form container (added for better layout) -->
 <div class="container my-5">
-  <form class="row g-3">
-
+  <form class="row g-3" id="signInForm">
     <div class="col-md-6">
       <label for="fname" class="form-label">First Name</label>
       <input type="text" class="form-control" id="fname">
@@ -105,15 +97,27 @@
           <input class="form-check-input" type="radio" name="gender" id="other" value="other">
           <label class="form-check-label" for="other">Other</label>
         </div>
-
       </div>
     </fieldset>
-
+    
     <div class="col-12">
-      <button type="submit" class="btn btn-lg btn-primary ">Sign in</button>
+      <button type="submit" class="btn btn-lg btn-primary" id="signin-btn">
+        SIGN IN
+      </button>
     </div>
-
   </form>
+</div>
+
+<!-- Toast -->
+<div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
+  <div id="welcomeToast" class="toast align-items-center text-bg-light border-0" role="alert">
+    <div class="d-flex">
+      <div class="toast-body" id="toastMessage">
+        <!-- message goes here -->
+      </div>
+      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
 </div>
 
 <!-- ✅ FOOTER INSIDE BODY -->
@@ -127,6 +131,7 @@
 </footer>
 
 <script src="/js/js/bootstrap.bundle.min.js"></script>
+<script src="/js/js/button.js"></script>
 
 </body>
 </html>

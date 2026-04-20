@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="/css/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/css/footer.css" />
+    <link rel="stylesheet" href="/css/css/footer.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 </head>
 
@@ -35,19 +35,12 @@
           <a class="nav-link" href="/html/community.html">Community</a>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-            Shop
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/html/women.html">Women</a></li>
-            <li><a class="dropdown-item" href="/html/men.html">Men</a></li>
-            <li><a class="dropdown-item" href="/html/children.html">Children</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="/html/shop.html">Shop</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/html/cart.html">Cart</a>
+          <a class="nav-link" href="/html/cart.html">Cart<span class="badge bg-dark ms-1" id="cartCount">0</span></a>
         </li>
       </ul>
     </div>
@@ -106,11 +99,16 @@
 
  <!-- button -->
 <div class="text-center my-4">
-  <a href="#login" class="btn btn-lg btn-outline-primary">
+  <a href="/html/login.html" class="btn btn-lg btn-outline-primary">
     JOIN US
   </a>
 </div>
 
+<div class="text-center my-4">
+  <a href="/html/shop.html" class="btn btn-lg btn-outline-success">
+    PLACE AN ORDER!
+  </a>
+</div>
 </div> <!-- closes container-lg -->
 
 <!-- ✅ FOOTER STARTS HERE -->
