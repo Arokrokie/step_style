@@ -1,3 +1,16 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
 .footer-fluid {
   background-color: #212529;
   color: white;
@@ -11,4 +24,8 @@
 .footer-bottom {
   border-top: 1px solid #444;
   margin-top: 20px;
+}
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
 }
