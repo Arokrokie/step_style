@@ -170,13 +170,23 @@ button:active, button:focus, .btn:active, .btn:focus {
 }
 
 .top-left-navigation ul li {
-  color: #999;
+  color: var(--white);
   cursor: pointer;
   font-size: 14px;
   font-weight: 700;
   position: relative;
   margin-left: 20px;
   padding-left: 20px;
+}
+
+.top-left-navigation ul li img {
+  width: 20px;
+  height: 15px;
+  object-fit: cover;
+  margin-right: 6px;
+  vertical-align: middle;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25);
 }
 
 .top-left-navigation ul li:first-child {
