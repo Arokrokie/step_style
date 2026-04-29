@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+package-lock.json
+npm-debug.log
+
+# Firebase Config (Contains sensitive keys)
+static/js/firebase-config.js
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+temp/
+tmp/
+
+# Database
+*.db
+stepstyle.db
+
+# Server files (don't deploy backend to GitHub Pages)
+server.js

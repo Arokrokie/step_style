@@ -1,0 +1,16 @@
+{
+  "name": "step-style-shop",
+  "version": "1.0.0",
+  "description": "Professional footwear and fashion e-commerce platform",
+  "private": true,
+  "homepage": "https://yourusername.github.io/repository-name",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": ["ecommerce", "fashion", "footwear"],
+  "author": "Step Style Team",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}

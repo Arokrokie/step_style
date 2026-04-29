@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community - Step Style</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../static/css/pullman-style.css">
+</head>
+
+<body>
+
+<!-- Start Header Area -->
+<header class="header-area">
+    <!-- main header start -->
+    <div class="main-header d-none d-lg-block">
+        <!-- header top start -->
+        <div class="header-top black-bg">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="top-left-navigation">
+                            <ul class="nav align-items-center">
+                                <li class="language">
+                                    <img src="https://via.placeholder.com/20x15?text=EN" alt="flag"> ENGLISH
+                                    <i class="fa fa-angle-down"></i>
+                                    <ul class="dropdown-list">
+                                        <li><a href="#"><img src="https://via.placeholder.com/20x15?text=EN" alt="flag"> English</a></li>
+                                        <li><a href="#"><img src="https://via.placeholder.com/20x15?text=FR" alt="flag"> French</a></li>
+                                    </ul>
+                                </li>
+                                <li class="curreny-wrap">
+                                    $ CURRENCY
+                                    <i class="fa fa-angle-down"></i>
+                                    <ul class="dropdown-list curreny-list">
+                                        <li><a href="#">$ USD</a></li>
+                                        <li><a href="#">€ EURO</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-end">
+                        <div class="header-social-link">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                        <ul class="user-info-block">
+                            <li><a href="login.html"><i class="fas fa-user-circle"></i> My Account</a></li>
+                            <li><a href="cart.html"><i class="fas fa-credit-card"></i> Cart</a></li>
+                            <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header top end -->
+
+        <!-- header middle area start -->
+        <div class="header-main-area black-soft sticky">
+            <div class="container">
+                <div class="row align-items-center position-relative">
+                    <!-- start logo area -->
+                    <div class="col-auto">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="../images/logo.png" alt="Step Style" style="max-height: 50px;">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end logo area -->
+
+                    <!-- main menu area start -->
+                    <div class="col-auto position-static">
+                        <div class="main-menu-area">
+                            <div class="main-menu">
+                                <nav class="desktop-menu">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="shop.html">Shop</a></li>
+                                        <li><a href="women.html">Women</a></li>
+                                        <li><a href="men.html">Men</a></li>
+                                        <li><a href="children.html">Children</a></li>
+                                        <li class="active"><a href="community.html">Community</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- main menu area end -->
+
+                    <!-- mini cart area start -->
+                    <div class="col-auto ms-auto">
+                        <div class="header-right">
+                            <div class="header-configure-area">
+                                <ul class="nav">
+                                    <li class="mini-cart-wrap">
+                                        <a href="#" class="minicart-btn">
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <span class="notification" id="cartCount">0</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- mini cart area end -->
+                </div>
+            </div>
+        </div>
+        <!-- header middle area end -->
+    </div>
+    <!-- main header end -->
+
+    <!-- mobile header start -->
+    <div class="mobile-header d-lg-none d-md-block sticky black-soft">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="mobile-main-header">
+                        <div class="mobile-logo">
+                            <a href="index.html">
+                                <img src="../images/logo.png" alt="Step Style" style="max-height: 40px;">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="cart.html" class="btn btn-sm btn-outline-light position-relative">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span class="badge bg-warning ms-1" id="cartCountMobile">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobile header end -->
+</header>
+
+<main>
+  <section class="hero-banner" style="background: linear-gradient(135deg, #1a2a6c 0%, #0d1540 100%); padding: 88px 0; color: #fff;">
+    <div class="container-lg text-center">
+      <h1 class="display-4 fw-bold mb-3">Our Community</h1>
+      <p class="lead mb-4">Join a vibrant community of shoppers and fashion enthusiasts.</p>
+      <a href="shop.html" class="btn btn-lg me-2" style="background-color: #f4c542; color: #1a2a6c; font-weight: 700;">Support the Mission</a>
+      <a href="index.html" class="btn btn-lg btn-outline-light">Back to Home</a>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container-lg">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h2 class="section-title mb-3">A Movement Beyond Footwear</h2>
+          <p class="mb-3">
+            At Step Style, we believe success is measured by more than the shoes we sell.
+            It is defined by the strength of our growing community and the positive footprint we leave behind.
+          </p>
+          <p class="mb-3">
+            We have cultivated a vibrant ecosystem of customers and partners invested in community support,
+            environmental restoration, and social responsibility.
+          </p>
+          <p>
+            For every pair sold, 50 Shillings goes into our Green Pool fund to plant and nurture trees across East Africa.
+            Every purchase becomes a direct action toward a greener and more sustainable future.
+          </p>
+        </div>
+        <div class="col-lg-5">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body p-4">
+              <h5 class="card-title mb-3">Community Promise</h5>
+              <p class="mb-2"><strong>50 UGX</strong> from every pair supports tree planting.</p>
+              <p class="mb-2">Local impact projects in Uganda and Kenya.</p>
+              <p>Collective contribution from every Step Style customer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding" style="background-color: #f6f6f6;">
+    <div class="container-lg">
+      <h2 class="text-center section-title mb-3">Impact Stories</h2>
+      <p class="text-center mb-4">See how our community is making a difference with every step.</p>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../images/impact.webp" class="d-block w-100" alt="Community impact one">
+          </div>
+          <div class="carousel-item">
+            <img src="../images/impact2.jpg" class="d-block w-100" alt="Community impact two">
+          </div>
+          <div class="carousel-item">
+            <img src="../images/impact3.webp" class="d-block w-100" alt="Community impact three">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container-lg">
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="card shadow-sm text-center border-0">
+            <div class="card-body p-4">
+              <h5 class="card-title fw-bold">Trees Planted</h5>
+              <h2 class="display-4 fw-bold" style="color: #1a2a6c;">1,250+</h2>
+              <p class="card-text mt-3">
+                Every purchase contributes directly to restoring our environment.
+                Together, our community is building a greener and more sustainable future.
+              </p>
+              <a href="shop.html" class="btn btn-primary mt-2">Contribute Today</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer-fluid">
+  <div class="container-lg footer-content">
+    <div>
+      <a class="d-flex align-items-center mb-2" href="index.html">
+        <img src="../images/logo.png" alt="logo" style="max-height: 40px;">
+        <span class="fw-bold ms-2">Step Style</span>
+      </a>
+      <p>Premium footwear and fashion crafted for comfort and style. Serving East Africa since 2021.</p>
+    </div>
+
+    <div>
+      <h5>Shop</h5>
+      <ul>
+        <li><a href="shop.html">All Products</a></li>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="men.html">Men</a></li>
+        <li><a href="children.html">Children</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h5>Support</h5>
+      <ul>
+        <li><a href="community.html">Contact</a></li>
+        <li><a href="shop.html">Shipping</a></li>
+        <li><a href="cart.html">Returns</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h5>Join our Newsletter</h5>
+      <p>Get the latest offers and product drops.</p>
+      <form class="d-flex" onsubmit="event.preventDefault(); alert('Subscribed!');">
+        <input class="form-control form-control-sm me-2" placeholder="Your email">
+        <button class="btn btn-sm" style="background-color: var(--secondary-gold); color: var(--primary-navy);">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">© 2026 Step Style. All rights reserved.</div>
+</footer>
+
+<!-- scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
